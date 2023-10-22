@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page-header {
+  display: flex;
+  padding-top: 10px;
+}
+.main-menu {
+  flex-grow: 1;
+}
+.main-menu-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: space-around;
+}
+.main-menu-list a {
+  font-size: 30px;
+  line-height: 41px;
+  color: #2a3d8f;
+}
+.main-menu-list a:hover {
+  color: #3893cc;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 35px 0;
+}
+
+.footer-wrapper {
+  background-color: #b5d4c5;
+}
+.hashtag {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.coryright {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400px;
+}
+.social-button {
+  margin: 0 10px;
+}
+
+.slogan {
+  height: 558px;
+  background-image: url(img/innsbruck1.png);
+  background-color: #dbe8f7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2 {
+  color: #2a3d8f;
+  font-size: 36px;
+  line-height: 49px;
+}
+h3 {
+  font-size: 30px;
+  line-height: 41px;
+}
+h1 {
+  margin: 0;
+  padding-top: 240px;
+  font-size: 60px;
+  line-height: 82px;
+  color: white;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* .about-numbers ul */
+.about-numbers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+.about-numbers-list li::before {
+  content: "\2713";
+  margin-right: 3px;
+}
+.marketing {
+  background-image: url(img/skier.png);
+  background-size: cover;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+  flex-direction: column;
+}
+.marketing p {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+  line-height: 33px;
+}
+.marketing a {
+  text-transform: uppercase;
+  margin-top: 60px;
+  background-color: #fff;
+  opacity: 0.7;
+  padding: 5px 10px;
+  color: black;
+  align-self: flex-end;
+}
+.about-weater-graph {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.about-weater-graph figcaption {
+  background-color: rgb(124, 124, 124);
+  font-size: 22px;
+  color: white;
+  padding: 5px; /* паторить */
+  text-align: center; /* повторить */
+}
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.gallery-list:hover {
+  display: grid;
+  height: 10px;
+}
+.gallery-item {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  align-items: center;
+  min-height: 258px;
+  background-color: #b5d4c5;
+  text-align: center;
+  color: white;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+.gallery-item h3 {
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+table thead {
+  background-color: rgb(32, 46, 92);
+  color: #fff;
+}
+table th,
+table td {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+  width: 25%;
+}
+table span {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .main-menu-list a {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 62px;
+  }
+  .gallery-item {
+    flex-direction: column;
+  }
+  .gallery-item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .gallery-item img {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .page-header img {
+    width: 55px;
+    margin-bottom: 5px;
+  }
+  .main-menu-list li {
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+  }
+  .main-menu {
+    width: 100%;
+  }
+  .main-menu-list a {
+    text-align: center;
+    display: block;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper .marketing {
+    width: 100%;
+  }
+  .marketing p {
+    font-size: 3vw;
+  }
+  .about-weater-graph figcaption {
+    font-size: 12px;
+  }
+  .map tr {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .map thead {
+    display: none;
+  }
+  .map td {
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 35px;
+  }
+  table span {
+    background-color: rgba(0, 38, 163, 0.336);
+    display: block;
+    color: dimgray;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    text-transform: uppercase;
+  }
+  .page-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-social {
+    margin: 35px 0;
+  }
+}
